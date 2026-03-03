@@ -1,0 +1,22 @@
+* {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+h3 {
+    color: purple;
+}
+
+
+.myclass {
+    color: darkgreen;
+}
+
+
+#myid {
+    color: crimson;
+}
+
+
+h6, p {
+    color: darkorange;
+}
