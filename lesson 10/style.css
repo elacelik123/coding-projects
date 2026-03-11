@@ -1,0 +1,43 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(11, 11, 11);
+    color:rgb(212, 220, 255);
+}
+h1 {
+color:rgb(112, 118, 227);
+}
+/* Advanced Selector: child-selector */
+ul > li {
+    font-weight:bold
+}
+/* Advanced Selector: sibling-selector */
+h3 + p {
+    background-color:rgb(42, 39, 67);
+}
+/* Pseudo classes:hover */
+ul li:hover {
+    color:rgb(81, 61, 232)
+}
+/* Pseudo Classes:nth-child */
+ul li:nth-child(3) {
+    background-color:rgb(42, 39, 67);
+}
+/* Pseudo Elements ::first-letter */
+p::first-letter {
+    font-size:30px;
+    color: rgb(86, 92, 202);
+}
+a {
+    color: rgb(212, 220, 255);
+}
+a:hover {
+    color:rgb(112, 118, 227);
+}
+/* Pseudo Elements::before */
+ul li::before {
+    content: "🚀";
+}
+/*  Pseudo Elements:: after */
+a::after {
+    content: "🔗";
+}
