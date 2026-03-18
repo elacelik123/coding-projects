@@ -1,0 +1,42 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(255, 229, 229);
+    color:rgb(230, 43, 121);
+}
+h1 {
+color:rgb(255, 87, 129);
+}
+
+ul > li {
+    font-weight:bold
+}
+
+h3 + p {
+    background-color:rgb(255, 180, 201);
+}
+
+ul li:hover {
+    color:rgb(238, 37, 104)
+}
+
+ul li:nth-child(1) {
+    background-color:rgb(253, 184, 199);
+}
+
+p::first-letter {
+    font-size:30px;
+    color: rgb(241, 67, 128);
+}
+a {
+    color: rgb(255, 143, 177);
+}
+a:hover {
+    color:rgb(243, 60, 121);
+}
+
+ul li::before {
+    content: "💗";
+}
+a::after {
+    content: "❤️";
+}
