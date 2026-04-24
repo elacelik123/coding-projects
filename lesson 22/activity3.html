@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>
+        Argument Objects in JS
+       </title>
+    </head>
+    <body>
+        <p>Finding the products of numbers with help of Argument Objects</p>
+        <p id="result"></p>
+        <script>
+function getProduct(){
+    var prod = 1;
+    for(var i = 0; i < arguments.length; i++) {
+        prod = prod * arguments[i];
+    }
+    document.getElementById("result").innerHTML = prod;
+}
+getProduct(4, 6, 2, 7);
+        </script>
+    </body>
+</html>
