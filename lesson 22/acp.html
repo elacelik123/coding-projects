@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Sum of Arguments
+    </title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+function getSum(){
+    var sum = 0;
+    for(var i = 0; i < arguments.length; i++) {
+        sum = sum + arguments[i];
+    }
+    document.write(" sum : " + sum + "<br>");
+}
+
+getSum(4, 5, 7, 9);
+
+
+
+var value = Math.acos(-1);
+document.write(" cos : " + value + "<br>");
+
+var value = Math.asin(1);
+document.write(" sin : " + value + "<br>");
+
+var value = Math.atan(1);
+document.write(" tan : " + value + "<br>");
+
+</script>
+
+</body>
+</html>
