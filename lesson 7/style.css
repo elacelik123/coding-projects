@@ -1,0 +1,21 @@
+/* UNIVERSAL SELECTOR */
+* {
+    font-family:cursive;
+}
+/* ELEMENTAL SELECTOR */
+h3 {
+    color: rgba(235, 183, 12, 0.884);
+}
+/* CLASS SELECTOR */
+.myclass {
+    color:green;
+}
+/* ID SELECTOR */
+#myid {
+    color: blue;
+}
+ 
+/* GROUP SELECTOR */
+h6, p {
+    color:purple;
+}

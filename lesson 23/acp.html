@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object and Array Project</title>
+</head>
+<body>
+
+    <h1>Object Data Structure and Array</h1>
+
+    <script>
+
+
+        let student = {
+            name: "Ela",
+            age: 12,
+            course: "JavaScript Learning"
+        };
+
+        document.write("<h2>Object Values</h2>");
+        document.write("Name: " + student.name + "<br>");
+        document.write("Age: " + student.age + "<br>");
+        document.write("Course: " + student.course + "<br><br>");
+
+
+        let fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+
+        document.write("<h2>Array Values Using Index</h2>");
+        document.write("First Fruit: " + fruits[0] + "<br>");
+        document.write("Second Fruit: " + fruits[1] + "<br>");
+        document.write("Third Fruit: " + fruits[2] + "<br><br>");
+
+
+        let joinedArray = fruits.join(" , ");
+
+        document.write("<h2>Using join() Function</h2>");
+        document.write(joinedArray + "<br><br>");
+
+        fruits.pop();
+
+        document.write("<h2>Using pop() Function</h2>");
+        document.write("Array after pop(): " + fruits.join(" , "));
+
+    </script>
+
+</body>
+</html>

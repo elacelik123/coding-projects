@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handle Errors in JS</title>
+</head>
+<body>
+    <h1>JavaScript Error Handling</h1>
+
+    <p id="result"></p>
+
+    <script>
+        try {
+            // Creating an error
+            let num = undefinedVariable;
+
+            document.getElementById("result").innerHTML = num;
+        }
+        catch(error) {
+            document.getElementById("result").innerHTML =
+                "Error Message: " + error.message;
+        }
+    </script>
+</body>
+</html>

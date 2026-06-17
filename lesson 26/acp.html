@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class in JavaScript</title>
+</head>
+<body>
+  <h1>JavaScript Classes Example</h1>
+
+  <p id="output"></p>
+
+  <script>
+    class Animal {
+      constructor(name, type) {
+        this.name = name;
+        this.type = type;
+      }
+
+      displayDetails() {
+        return `Animal Name: ${this.name}<br>
+                Animal Type: ${this.type}`;
+      }
+
+      static message() {
+        return "This is a static method inside the Animal class.";
+      }
+    }
+
+    class Dog extends Animal {
+      constructor(name, type, breed) {
+        super(name, type);
+        this.breed = breed;
+      }
+
+      displayBreed() {
+        return `Dog Breed: ${this.breed}`;
+      }
+    }
+
+    const dog1 = new Dog("Buddy", "Mammal", "Golden Retriever");
+
+    document.getElementById("output").innerHTML =
+      Animal.message() + "<br><br>" +
+      "--- Dog Information ---<br>" +
+      dog1.displayDetails() + "<br>" +
+      dog1.displayBreed();
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration Form</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align:center;
+            padding:30px;
+        }
+
+        input{
+            padding:8px;
+            margin:5px;
+            width:250px;
+        }
+
+        button{
+            padding:10px 20px;
+            margin-top:10px;
+        }
+
+        div{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Event Registration Form</h1>
+
+    <input type="text" id="name" placeholder="Enter Name"><br>
+    <input type="email" id="email" placeholder="Enter Email"><br>
+    <input type="number" id="age" placeholder="Enter Age"><br>
+
+    <button onclick="register()">Register</button>
+
+    <div>Status: <span id="status"></span></div>
+    <div>Pass ID: <span id="passid"></span></div>
+
+    <script>
+
+        function register(){
+
+            let name=document.getElementById("name").value;
+            let email=document.getElementById("email").value;
+            let age=document.getElementById("age").value;
+
+            if(name=="" || email=="" || age==""){
+                document.getElementById("status").innerHTML =
+                "Please fill all fields";
+                return;
+            }
+
+            if(age < 16){
+                document.getElementById("status").innerHTML =
+                "Age must be 16 or above";
+                return;
+            }
+
+            document.getElementById("status").innerHTML =
+            "Registration Successful";
+
+            setTimeout(function(){
+
+                let pass=Math.floor(Math.random()*10000);
+
+                document.getElementById("passid").innerHTML =
+                "EVT" + pass;
+
+                document.getElementById("status").innerHTML =
+                "Event Pass Generated";
+
+            },2000);
+
+        }
+
+    </script>
+
+</body>
+</html>

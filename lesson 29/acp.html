@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Event Data Viewer</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: aliceblue;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1{
+            color: #ff5a43;
+        }
+
+        button{
+            background: #ff5a43;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        div{
+            border: 1px solid #ff5a43;
+            width: 350px;
+            margin: 8px auto;
+            padding: 8px;
+            text-align: left;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>School Event Data Viewer</h1>
+
+<button onclick="loadEvent()">Load Event Data</button>
+
+<div>Status: <span id="status"></span></div>
+<div>JSON Text: <span id="json-text"></span></div>
+<div>Event Name: <span id="event-name"></span></div>
+<div>Date: <span id="event-date"></span></div>
+<div>Location: <span id="event-location"></span></div>
+
+<script>
+
+    let eventData = {
+        name: "Science Fair",
+        date: "17 June 2026",
+        location: "School Hall"
+    };
+
+    function delay(ms){
+        return new Promise(function(resolve){
+            setTimeout(resolve, ms);
+        });
+    }
+
+    async function loadEvent(){
+
+        document.getElementById("status").innerHTML =
+        "Loading event data...";
+
+        await delay(2000);
+
+        let jsonText = JSON.stringify(eventData);
+
+        document.getElementById("json-text").innerHTML =
+        jsonText;
+
+        let loadedEvent = JSON.parse(jsonText);
+
+        document.getElementById("event-name").innerHTML =
+        loadedEvent.name;
+
+        document.getElementById("event-date").innerHTML =
+        loadedEvent.date;
+
+        document.getElementById("event-location").innerHTML =
+        loadedEvent.location;
+
+        document.getElementById("status").innerHTML =
+        "Event data loaded successfully!";
+    }
+
+</script>
+
+</body>
+</html>
