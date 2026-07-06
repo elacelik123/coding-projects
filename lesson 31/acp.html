@@ -10,6 +10,8 @@
             font-family: Arial, sans-serif;
         }
 
+        /* Navigation Bar */
+
         ul{
             list-style-type:none;
             margin:0;
@@ -35,6 +37,7 @@
         }
 
         /* Banner */
+
         .banner{
             background-image:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
             background-size:cover;
@@ -53,12 +56,14 @@
             font-size:20px;
         }
 
-        /* Part 2 */
+        /* About Section */
 
         .section{
             text-align:center;
             padding:40px;
         }
+
+        /* Portfolio */
 
         .portfolio{
             display:flex;
@@ -69,9 +74,9 @@
 
         .item{
             border:1px solid #ccc;
-            width:200px;
-            padding:15px;
             border-radius:8px;
+            padding:15px;
+            width:200px;
         }
 
         .item img{
@@ -80,10 +85,42 @@
             border-radius:5px;
         }
 
+        /* Social Media */
+
+        .social{
+            background:#f5f5f5;
+            text-align:center;
+            padding:40px;
+        }
+
+        .social a{
+            text-decoration:none;
+            color:#ff5a43;
+            margin:15px;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        .social a:hover{
+            color:#e04a35;
+        }
+
+        /* Footer */
+
+        footer{
+            background:#ff5a43;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
     </style>
+
 </head>
 
 <body>
+
+    <!-- Navigation Bar -->
 
     <ul>
         <li><a href="#">Home</a></li>
@@ -91,6 +128,8 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
+
+    <!-- Banner -->
 
     <div class="banner">
         <h1>Susan's Restaurant</h1>
@@ -100,12 +139,15 @@
     <!-- About Section -->
 
     <div class="section">
+
         <h2>About Us</h2>
 
         <p>
-            Welcome to Susan's Restaurant. We serve fresh, delicious food
-            and provide the best dining experience for our customers!!
+            Welcome to Susan's Restaurant. We serve fresh and delicious food
+            prepared with quality ingredients. Our goal is to provide the best
+            dining experience for every customer.
         </p>
+
     </div>
 
     <!-- Menu Section -->
@@ -137,6 +179,28 @@
         </div>
 
     </div>
+
+    <!-- Social Media -->
+
+    <div class="social">
+
+        <h2>Follow Us</h2>
+
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>&copy; 2026 Susan's Restaurant</p>
+        <p>123 Main Street, London</p>
+        <p>Email: info@susansrestaurant.com</p>
+
+    </footer>
 
 </body>
 </html>
