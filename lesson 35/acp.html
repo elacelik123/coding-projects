@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank App</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+        }
+
+        #bankapp {
+            background-color: white;
+            width: 350px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #cccccc;
+        }
+
+        #bankapp h1 {
+            color: #ff8bcf;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 26px;
+        }
+
+        #bankapp h2 {
+            color: #333333;
+            font-size: 18px;
+        }
+
+        .balance-box {
+            background-color: #ff8bcf;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 8px #cccccc;
+        }
+
+        .balance-box h2 {
+            color: white;
+        }
+
+        .balance-box h1 {
+            color: white !important;
+            font-size: 30px;
+        }
+
+        .summary {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .income, .expense {
+            width: 50%;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 6px #dddddd;
+        }
+
+        .income h3 {
+            color: green;
+        }
+
+        .expense h3 {
+            color: #e04a35;
+        }
+
+        .transaction {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            margin: 8px 0;
+            background-color: #f7f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #176b55;
+        }
+
+        .income-item span:last-child {
+            color: green;
+        }
+
+        .expense-item {
+            border-left-color: #e04a35;
+        }
+
+        .expense-item span:last-child {
+            color: #e04a35;
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            background-color: #ff8bcf;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 3px 6px #cccccc;
+        }
+
+        button:hover {
+            background-color: #e65dad;
+        }
+
+        #bankapp h2 {
+        color: #ff8bcf; 
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div id="container">
+
+    <div id="bankapp">
+
+        <h1>Bank App</h1>
+
+        <div class="balance-box">
+            <h2>Your Balance</h2>
+            <h1>$5000</h1>
+        </div>
+
+        <div class="summary">
+            <div class="income">
+                <h3>Income</h3>
+                <p>$7000</p>
+            </div>
+
+            <div class="expense">
+                <h3>Expense</h3>
+                <p>$2000</p>
+            </div>
+        </div>
+
+        <h2>Transaction History</h2>
+
+        <div class="transaction income-item">
+            <span>Salary</span>
+            <span>+$3000</span>
+        </div>
+
+        <div class="transaction expense-item">
+            <span>Groceries</span>
+            <span>-$150</span>
+        </div>
+
+        <div class="transaction expense-item">
+            <span>Electric Bill</span>
+            <span>-$80</span>
+        </div>
+
+        <h2>Add Transaction</h2>
+
+        <input type="text" placeholder="Enter Description">
+
+        <input type="number" placeholder="Enter Amount">
+
+        <button>Add Transaction</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
